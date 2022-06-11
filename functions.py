@@ -17,16 +17,16 @@ temp05 = np.zeros(npoints)
 temp08 = np.zeros(npoints)
 temp1 = np.zeros(npoints)
 temp15 = np.zeros(npoints)
-temp2 = np.zeros(npoints)
+
 
 press05 = np.zeros(npoints)
 press08 = np.zeros(npoints)
 press1 = np.zeros(npoints)
 press15 = np.zeros(npoints)
-press2 = np.zeros(npoints)
 
-temp_SV = [temp05, temp08, temp1, temp15, temp2]
-press_SV = [press05, press08, press1, press15, press2]
+
+temp_SV = [temp05, temp08, temp1, temp15]
+press_SV = [press05, press08, press1, press15]
 
 def T_PForDiffP(equlibrium, T0):
     P = np.linspace(0.1 * ct.one_atm, ct.one_atm * 6, npoints)
